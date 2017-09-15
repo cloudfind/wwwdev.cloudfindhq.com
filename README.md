@@ -1,2 +1,3 @@
-# cloudfindhq.com
-Website
+# Cloudfind website
+
+See: https://github.com/cloudfind/website
