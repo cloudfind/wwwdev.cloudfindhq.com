@@ -584,9 +584,10 @@ body {
 
 .team-wrapper .team-container {
   width: 50%;
-  float: left;
   text-align: center;
-  position: relative; }
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top; }
   @media (max-width: 800px) {
     .team-wrapper .team-container {
       width: 100%;
