@@ -610,6 +610,8 @@ body {
     display: inline-block;
     margin: 20px 3% 0;
     opacity: 0.999; }
+    .team-wrapper .team-container .headshot img {
+      width: 200px; }
   .team-wrapper .team-container h4 {
     color: #6be7c6;
     font-size: 1.75em;
