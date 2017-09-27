@@ -620,10 +620,9 @@ body {
     letter-spacing: 2px;
     margin: 9px 0 3px; }
   .team-wrapper .team-container p {
-    margin: 0; }
+    margin: 0.75em 0; }
   .team-wrapper .team-container .icons {
-    font-size: 1.5em;
-    padding: 10px 0; }
+    font-size: 1.5em; }
   .team-wrapper .team-container a.fa {
     text-decoration: none; }
 
