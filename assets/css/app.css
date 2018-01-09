@@ -648,6 +648,9 @@ body {
     #pricing #price-box .price strong {
       display: block;
       font-size: 5em; }
+    #pricing #price-box .trial strong {
+      display: block;
+      font-size: 2em; }
 
 footer {
   color: #5f5f5f;
