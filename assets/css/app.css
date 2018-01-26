@@ -493,6 +493,8 @@ body {
       text-align: center; }
     .container .content strong {
       color: #fff; }
+    .container .content .cta {
+      text-align: center; }
   .container .video-wrapper {
     max-width: 770px;
     margin: 35px auto 0; }
