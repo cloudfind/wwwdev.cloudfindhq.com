@@ -475,6 +475,14 @@ body {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
+    .site-header__button a.help-link {
+      font-size: 1.125em;
+      margin: 0 20px;
+      text-decoration: none;
+      color: #084293;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
 
 .container {
   background: #084293 url("/assets/img/dotted-background.png") repeat-x center bottom 10px;
