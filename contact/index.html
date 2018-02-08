@@ -2,7 +2,6 @@
 			var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.hamburger'), 0)
 			$navbarBurgers.forEach(function ($el) {
 				var $target = Array.prototype.slice.call(document.querySelectorAll('nav'), 0)[0]
-				console.log($el, $target)
 				$el.addEventListener('click', function (event) {
 					event.preventDefault()
 					$el.blur()
