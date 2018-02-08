@@ -7985,6 +7985,8 @@ nav {
       color: #1d1d1d; }
     .features .columns.blue, .features .columns.blue-dotted {
       background-color: #1353A7; }
+    .features .columns .cfbutton {
+      margin-bottom: 0; }
 
 .contact .email {
   font-size: 1.75em;
