@@ -2388,9 +2388,11 @@ a.has-text-danger:hover, a.has-text-danger:focus {
             transform: rotate(-90deg); }
 
 html {
+  width: 100%;
   height: 100%; }
 
 body {
+  width: 100%;
   min-height: 100%;
   position: relative; }
 
@@ -2434,6 +2436,13 @@ nav {
   left: -20em;
   height: 100%;
   background: #3683DB; }
+  @media (max-width: 768px) {
+    nav {
+      top: 149px;
+      z-index: 999;
+      width: 100%;
+      left: -100%;
+      height: auto; } }
   nav.is-active {
     left: 0; }
   nav li {
@@ -2444,6 +2453,11 @@ nav {
     text-decoration: none;
     font-size: 1.5em;
     padding: 0.2em; }
+  nav .login {
+    display: none; }
+    @media (max-width: 768px) {
+      nav .login {
+        display: block; } }
 
 .body-wrap {
   position: relative;
@@ -2452,6 +2466,9 @@ nav {
   transition: left 300ms; }
   .body-wrap.is-active {
     left: 20em; }
+    @media (max-width: 768px) {
+      .body-wrap.is-active {
+        left: 0; } }
 
 .header {
   text-align: center;
@@ -2466,6 +2483,9 @@ nav {
     border-radius: 50%;
     background: #3683DB;
     padding: 22px 20px 18px; }
+    @media (max-width: 768px) {
+      .header .hamburger {
+        left: 15px; } }
   .header .logo {
     margin: 0 auto;
     padding: 30px;
@@ -2480,6 +2500,9 @@ nav {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
+    @media (max-width: 768px) {
+      .header .login {
+        display: none; } }
 
 .content h1, .hero h1 {
   font-size: 1.750em;
@@ -2496,7 +2519,7 @@ nav {
     font-weight: bold; }
 
 .hero {
-  background: #084293 url("/assets/img/dotted-background-blue.gif") repeat-x center bottom 10px;
+  background: #084293 url(/assets/img/dotted-background-dark.png) repeat-x center bottom 5px/491px;
   padding: 55px 5em 100px;
   text-align: center;
   padding: 70px 0; }
@@ -2522,16 +2545,16 @@ nav {
       border: 0; }
 
 .content .columns {
-  padding: 30px 0 80px;
+  padding: 30px 0 120px;
   margin: 0 auto; }
   .content .columns.light {
     background-color: #E7EDF6; }
   .content .columns.lines {
-    background: url(/assets/img/lines-background.png) bottom repeat-x #FFF; }
+    background: #fff url(/assets/img/lines-background.png) repeat-x center bottom -125px/592px; }
   .content .columns.dotted {
-    background: url(/assets/img/dotted-background-white.gif) bottom repeat-x #FFF; }
+    background: #fff url(/assets/img/dotted-background-light.png) repeat-x center bottom 5px/491px; }
   .content .columns.blue-dotted {
-    background: url(/assets/img/dotted-background-blue.gif) bottom repeat-x #084293; }
+    background: #084293 url(/assets/img/dotted-background-dark.png) repeat-x center bottom 5px/491px; }
   .content .columns.hands {
     background: url(/assets/img/hands-typing.jpg) center center no-repeat;
     background-size: cover;
@@ -2575,7 +2598,7 @@ nav {
       .content .columns .column {
         max-width: 100%;
         text-align: center; }
-        .content .columns .column img {
+        .content .columns .column > img {
           width: 100% !important; } }
   .content .columns.single .column {
     max-width: 880px; }
@@ -2663,9 +2686,7 @@ nav {
       .content .sources .column:first-child {
         text-align: center !important; }
       .content .sources .source {
-        margin: 10px; }
-        .content .sources .source img {
-          width: auto; } }
+        margin: 10px; } }
 
 .content .headshots {
   padding: 20px 0; }
